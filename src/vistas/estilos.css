@@ -1,0 +1,90 @@
+body{
+  background-color: #262626;
+}
+
+.formulario {
+  background: rgb(0, 0, 0);
+  padding: 18px;
+  width: fit-content;
+  color: orange;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  border: 1px solid black;
+  margin-bottom: 10px;
+}
+
+.formulario input {
+  font-size: 14px;
+  padding: 5px;
+  margin-bottom: 5px;
+  width: 100%;
+  border-radius: 10px;
+  border: 2px solid orange;
+}
+
+.tabla-usuarios {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #000000;
+  color: orange;
+}
+
+.tabla-usuarios th,
+.tabla-usuarios td {
+  padding: 10px;
+  text-align: center;
+  border: 2px solid orange;
+
+}
+
+.tabla-usuarios th {
+  font-weight: bold;
+}
+
+@keyframes grow {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
+
+@keyframes changeColor {
+  0% {
+    background-color: #90b9bc;
+  }
+  50% {
+    background-color: #ac6f6f;
+  }
+  100% {
+    background-color: #338c91;
+  }
+}
+
+.rainbow-button {
+  width: 140px;
+  height: 55px;
+  border-radius: 10px;
+  background-color: #000000;
+  color: #ffffff;
+  border-color: orange;
+  font-size: 13px;
+  font-weight: medium;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.5s ease;
+}
+
+.rainbow-button:hover {
+  animation: grow 0.3s ease forwards, changeColor 1.5s linear infinite;
+  animation-fill-mode: both;
+  animation-iteration-count: 1;
+  animation-delay: 1ms;
+  animation-play-state: running;
+}
